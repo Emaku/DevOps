@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+	border: 1px solid black;
+}
+</style>
+<link rel="stylesheet" href="myStyle.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="myScript.js"></script>
+<title>Employee Home</title>
+</head>
+<body>
+
+	<p>Reimbursement Table</p>
+
+
+	<br>
+	<br>
+	<b>Reimbursements</b>
+
+	<br>
+	<br>
+
+	<br> Reason Type
+
+
+
+	<form action="SubmitRmbServlet" method="get">
+		<br> <br> Reason <input type="text" name="reason"
+			id="reasonID"> <br> <br> Amount <input
+			type="number" name="amountRequested" id="amountID">
+		<button onclick="rmbSubmit()">Submit Request</button>
+
+	</form>
+
+	<br>
+	<br>
+
+	<p id="printHere"></p>
+	<button onclick="viewMyInfo()" name="focus">View My Info</button>
+	<button onclick="myPendings()" name="focus">View Pending
+		Request</button>
+	<button onclick="myResolved()" name="focus">View Resolved
+		Request</button>
+
+
+	<form action="EmpServlet" method="get">
+		<p>Update User Info</p>
+
+		<!-- Update User Form -->
+		<br> New Username: <input type="text" name="newUname"
+			id="newUsername"><br> New Password: <input type="text"
+			name="newPw" id="newPassword"><br> New Email: <input
+			type="text" name="newEmail" id="newEmail"> <br>
+
+		<!-- Buttons -->
+		<br> </input>
+		<Button name="focus" id="updateInfo" value="Update Info"></Button>
+
+	</form>
+
+	<form action="LogOutServlet" method="get">
+		<button>Log Out</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Project</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="myStyle.css">
+<script src="myScript.js"></script>
+<script type="text/javascript"
+	src="C:/STSWorkspace/HomeProject/src/main/resources/MyServlet.json"></script>
+
+</head>
+<body>
+
+	<h1>Homepage</h1>
+	<h2>Welcome Employee! :D</h2>
+
+	<div id="tableID">
+		<table id="rmbTable">
+			<tr id="rmbHeader" class="tHeader">
+				<th style="border: 10px;" id="ridTHead">Rid</th>
+				<th style="border: 10px;" id="reasonTypeTHead">Reason Type</th>
+				<th id="reasonTHead">Reason (optional)</th>
+				<th id="statusTHead">Status</th>
+				<th id="requestedByTHead">Request By</th>
+				<th id="amountRequestedTHead">Amount Requested</th>
+				<th id="amountReceivedTHead">Amount Received</th>
+				<th id="approvedByTHead">Approved By</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Gas</td>
+				<td>Had to get Gas</td>
+				<td>Pending...</td>
+				<td>RAYLLEN</td>
+				<td>13</td>
+				<td>0</td>
+				<td>No One</td>
+
+			</tr>
+		</table>
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<form>
+		<div>
+			<h4>
+				Submit New Reimbursement Request
+				<h4>
+
+					<br> <br>Type: <input type="text" name="ReasonType"
+						id="reasonType"> <br> <br>Reason (optional) <input
+						type="text" name="Reason" id="reason"> <br> <br>Amount
+					Requested<input type="text" name=" AmountRequested"
+						id="amountRequested"> <br> <br> <input
+						type="submit" onclick="addRecord()" name="submitRmb">
+		</div>
+
+
+	</form>
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form action="EmpServlet" method="get">
+		<input type="submit" value="Log Out">
+	</form>
+    <script type="text/javascript">
+
+
+
+        function addRecord() {
+            var reasonType = document.getElementById("reasonType").value;
+            var reason = document.getElementById("reason").value;
+            var ar = document.getElementById("amountRequested").value;
+
+            var table = document.getElementsByTagName("table")[0];
+
+            var record = table.insertRow(table.rows.length);
+
+
+            var ridCell = record.insertCell(0);
+            var rtCell = record.insertCell(1);
+            var rCell = record.insertCell(2);
+            var statusCell = record.insertCell(3);
+            var midCell = record.insertCell(4);
+            var arqCell = record.insertCell(5);
+            var arcvCell = record.insertCell(6);
+            var apbCell = record.insertCell(7);
+
+            ridCell.innerHTML = "88";
+            rtCell.innerHTML = "" + reasonType;
+            rCell.innerHTML = "" + reason;
+            statusCell.innerHTML = "Pending";
+            midCell.innerHTML = "" + 22;
+            arqCell.innerHTML = "" + 12;
+            arcvCell.innerHTML = "" + 0;
+            apbCell.innerHTML = "No One";
+            
+            console.log("Success! :D");
+        }
+
+
+    </script>
+
+</body>
+</html> -->
+</html>

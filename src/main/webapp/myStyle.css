@@ -1,0 +1,20 @@
+
+
+tr {
+	border: 10px;
+	
+	border-color: blue; 
+}
+td{
+	color: red;
+}
+table{
+	border: 15px;
+}
+body{
+/* 	background-color: lime;
+ */}
+ 
+ table, td {
+    border: 1px solid black;
+}

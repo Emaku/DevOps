@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+	border: 1px solid black;
+}
+</style>
+<link rel="stylesheet" href="myStyle.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="myScript.js"></script>
+<title>Manager Home</title>
+</head>
+<body>
+
+	<p>Reimbursement Table</p>
+
+
+
+	
+	<br>
+	<b>Reimbursements</b>
+	<br> 
+	<br>
+	
+	<form action="SubmitRmbServlet" method="get">
+		<br> <br> Reason <input type="text" name="reason"
+			id="reasonID"> <br> <br> Amount <input
+			type="number" name="amountRequested" id="amountID">
+		<button onclick="rmbSubmit()">Submit Request</button>
+
+	</form>
+
+	<br>
+	<br>
+
+	<p id="printHere"></p>
+	<Button onclick="viewAllEmp()" name="focus">View All Employees</Button>
+	<Button onclick="viewPending()" name="focus" id="viewPending">View
+		Pending Request</Button>
+	<Button onclick="viewResolved()" name="focus" id="viewApproved">View
+		Resolved Request</Button>
+	<br>
+	<br> To perform an action on a particular Reimbursement, enter the
+	Reimbursement id (rid):
+
+	<form action="ManagerServlet" method="get">
+		<input type="number" placeholder="Enter RID" name = "enterRID" id="enterRID">
+		<input type="text" placeholder="Enter Approve or Deny" name = "enterStatus" id = "enterStatusID">
+		<button id="changeStatus()">Approve</button>
+		
+	</form>
+
+	<br>
+	<br> To view recent Reimbursement Requests from a particular
+	Employee, enter the Employee's id (mid):
+	<input type="number" placeholder="Enter MID" id="enterMID"><br><br>
+	<button onclick="viewMemberRmb()" id="enterMID">View Employee
+		Reimbursements</button>
+	<button onclick="viewMyInfo()" name="focus">View My Info</button>
+
+	<br>
+	<br>
+
+
+	<form action="EmpServlet" method="get">
+		<p>Update User Info</p>
+
+		<!-- Update User Form -->
+		<br> New Username: <input type="text" name="newUname"
+			id="newUsername"><br> New Password: <input type="text"
+			name="newPw" id="newPassword"><br> New Email: <input
+			type="text" name="newEmail" id="newEmail"> <br>
+
+		<!-- Buttons -->
+		<br>
+		</input>
+		<Button name="focus" id="updateInfo" value="Update Info"></Button>
+
+	</form>
+
+	<form action="LogOutServlet" method="get">
+		<button>Log Out</button>
+	</form>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<p id="demo"></p>
+
+
+</body>
+</html>
