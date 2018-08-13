@@ -52,21 +52,22 @@
 			<version>12.2.0.1</version>
 			</dependency> -->
 		
+		<!--
 		<dependency>
   			<groupId>com.oracle</groupId>
   			<artifactId>ojdbc14</artifactId>
-  			<version>10.2.0.4.0</version>
-			
+  			<version>10.2.0.4.0</version>	
 
-		</dependency> 
+		</dependency> -->
+
 		<!-- https://mvnrepository.com/artifact/ojdbc14/ojdbc14 -->
 		
-		<!--
+		
 		<dependency>
    			 <groupId>ojdbc14</groupId>
     			 <artifactId>ojdbc14</artifactId>
    			 <version>10.2.0.3.0</version>
-		</dependency>  -->
+		</dependency>  
 
 		<dependency>
 			<groupId>org.glassfish</groupId>
