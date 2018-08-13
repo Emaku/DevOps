@@ -35,7 +35,7 @@
    			<version>12.1.0.2</version>
 		</dependency> -->
 		
-		
+		<!--
 		 <dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
@@ -43,7 +43,7 @@
 			 <scope>system</scope>
 			 <systemPath>$HOME/.m2/repository/com/oracle/ojdbc7/12.1.0/ojdbc7-12.1.0.jar</systemPath>
 
-		</dependency> 
+		</dependency>  -->
 		
 		<!--
 		<dependency>
@@ -51,12 +51,12 @@
 			<artifactId>ojdbc8</artifactId>
 			<version>12.2.0.1</version>
 			</dependency> -->
-		<!--
+		
 		<dependency>
   			<groupId>com.oracle</groupId>
   			<artifactId>ojdbc14</artifactId>
   			<version>10.2.0.4.0</version>
-		</dependency> -->
+		</dependency> 
 		<!-- https://mvnrepository.com/artifact/ojdbc14/ojdbc14 -->
 		
 		<!--
