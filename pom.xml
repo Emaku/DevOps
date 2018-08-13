@@ -34,11 +34,13 @@
     		  	<artifactId>ojdbc7</artifactId>
    			<version>12.1.0.2</version>
 		</dependency> -->
+		
+		<!--
 		 <dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0</version>
-		</dependency>
+		</dependency> -->
 		
 		<!--
 		<dependency>
@@ -52,7 +54,14 @@
   			<artifactId>ojdbc14</artifactId>
   			<version>10.2.0.4.0</version>
 		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/ojdbc14/ojdbc14 -->
 		
+		<dependency>
+   			 <groupId>ojdbc14</groupId>
+    			 <artifactId>ojdbc14</artifactId>
+   			 <version>10.2.0.3.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.json</artifactId>
