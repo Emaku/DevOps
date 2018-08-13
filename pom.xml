@@ -56,7 +56,7 @@
   			<groupId>com.oracle</groupId>
   			<artifactId>ojdbc14</artifactId>
   			<version>10.2.0.4.0</version>
-			<systemPath>/home/ec2-user/.m2/repository/ojdbc14/ojdbc14/10.2.0.3.0/</systemPath>
+			
 
 		</dependency> 
 		<!-- https://mvnrepository.com/artifact/ojdbc14/ojdbc14 -->
